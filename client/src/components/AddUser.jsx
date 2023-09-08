@@ -25,7 +25,7 @@ const userData = {
     password:""
 }
 const [data , setData] = useState(userData);
-
+axios.defaults.withCredentials = true;
 // change handler function
 function onChangeHandler (e){
     setData({ ...data, [e.target.name]: e.target.value });
