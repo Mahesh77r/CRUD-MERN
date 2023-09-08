@@ -14,7 +14,7 @@ dotenv.config();
 app.use(cors(
   {
         origin: "https://crud-mern-client-pi.vercel.app",
-        methods:["POST","GET","PUT","DELETE"],
+        methods:[*],
         credentials:true
     }
 ));
