@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const URL = 'http://localhost:9900';
+const URL = 'https://crud-mern-qms1-mahesh77r.vercel.app';
 
 // adduser api
 export const addUser = async(data) => {
