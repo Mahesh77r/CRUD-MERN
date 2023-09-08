@@ -27,6 +27,7 @@ axios.defaults.withCredentials = true;
   const getData = async () => {
     let res = await getUser();
     setUsers(res.data);
+    console.log(res);
   };
 
   const deleteUserDetails = async (id)=>
