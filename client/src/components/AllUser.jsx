@@ -16,7 +16,7 @@ function AllUser() {
     width: 90%;
     margin: 50px auto;
   `;
-
+axios.defaults.withCredentials = true;
   const [users, setUsers] = useState([]);
   let i = 1;
   useEffect(() => {
