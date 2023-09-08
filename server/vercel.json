@@ -2,25 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.js",   // Replace with the entry point of your Node.js server file
-      "use": "@vercel/node" // Use the Node.js builder
-    },
-    {
-      "src": "client/src", // Replace with the build directory of your frontend app
-      "use": "@vercel/static" // Use the static builder
+      "src": "*.js",  
+      "use": "@vercel/node" 
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",  // Define API routes
-      "dest": "index.js"
-    },
-    {
-      "src": "/(.*)",      // Serve frontend routes
-      "dest": "client/src",
-      "headers": {
-        "Cache-Control": "s-maxage=1, stale-while-revalidate" // Cache settings
-      }
+      "src": "/(.*)",  
+      "dest": "/"
     }
   ]
 }
