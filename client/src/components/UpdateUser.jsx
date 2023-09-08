@@ -34,7 +34,7 @@ const UpdateUser = () => {
 
   let navigate = useNavigate();
 
-  
+  axios.defaults.withCredentials = true;
   const loadUserDetails = async () => {
       const response = await getUser(id);
       setData(response.data);
