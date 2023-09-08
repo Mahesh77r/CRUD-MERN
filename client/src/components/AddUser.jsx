@@ -2,7 +2,7 @@ import { FormGroup , FormControl , Input , InputLabel, Typography, Button , styl
 import { useState } from 'react';
 import { addUser } from '../api/CrudApi';
 import { useNavigate } from 'react-router-dom';
-
+import axios from 'axios';
 
 const Container = styled(FormGroup)`
 width:50%;
