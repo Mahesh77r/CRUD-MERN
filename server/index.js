@@ -30,7 +30,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 // using different function on f=different route
 app.use('/',Router);
 
-const PORT = "crud-mern-qms1-mahesh77r.vercel.app";
+const PORT = 9900;
 
 Connection();
 app.listen(PORT,() => {console.log(`Server running on PORT ${PORT}`)});
