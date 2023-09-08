@@ -30,9 +30,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 // using different function on f=different route
 app.use('/',Router);
 
-const username = process.env.DB_USER;
-const password = process.env.DB_PASSWORD;
 const PORT = "crud-mern-qms1-mahesh77r.vercel.app";
 
-Connection(username,password);
+Connection();
 app.listen(PORT,() => {console.log(`Server running on PORT ${PORT}`)});
