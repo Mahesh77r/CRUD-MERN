@@ -32,7 +32,7 @@ app.use('/',Router);
 
 const username = process.env.DB_USER;
 const password = process.env.DB_PASSWORD;
-const PORT = 9900;
+const PORT = "crud-mern-qms1-mahesh77r.vercel.app";
 
 Connection(username,password);
 app.listen(PORT,() => {console.log(`Server running on PORT ${PORT}`)});
